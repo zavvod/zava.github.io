@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C100P LIMITED - International Legal Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .language-switch {
+            transition: all 0.3s ease;
+        }
+        .language-switch:hover {
+            transform: scale(1.05);
+        }
+        .contact-card {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        .fade-in {
+            animation: fadeIn 0.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Header with Language Switch -->
+    <header class="bg-blue-900 text-white">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-balance-scale text-2xl"></i>
+                <h1 class="text-xl font-bold">C100P LIMITED</h1>
+            </div>
+            <div class="flex space-x-4">
+                <button id="enBtn" class="language-switch bg-white text-blue-900 px-3 py-1 rounded-full font-medium">EN</button>
+                <button id="ruBtn" class="language-switch bg-blue-800 text-white px-3 py-1 rounded-full font-medium">RU</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-800 to-blue-600 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 id="heroTitle" class="text-4xl font-bold mb-6 fade-in">International Legal Services Group</h2>
+            <p id="heroSubtitle" class="text-xl mb-8 max-w-2xl mx-auto fade-in">Expert legal solutions for clients in the UK, EU, USA and Middle East</p>
+            <a href="https://www.c100p.com" target="_blank" class="bg-white text-blue-800 hover:bg-blue-100 px-8 py-3 rounded-full font-bold text-lg transition duration-300 inline-block">
+                <i class="fas fa-external-link-alt mr-2"></i>
+                <span id="visitWebsite">Visit Our Website</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8 fade-in">
+                    <h3 id="aboutTitle" class="text-3xl font-bold text-blue-900 mb-6">About C100P LIMITED</h3>
+                    <p id="aboutText1" class="text-gray-700 mb-4">C100P LIMITED is part of the international law group CENTER100PLUS. The company mostly serves clients residing in the UK, EU, USA and the Middle East.</p>
+                    <p id="aboutText2" class="text-gray-700">C100P Limited is incorporated in the United Kingdom, registration No. 16034770.</p>
+                </div>
+                <div class="md:w-1/2 fade-in">
+                    <div class="bg-gray-100 p-6 rounded-lg border border-gray-200">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-map-marker-alt text-blue-900 text-2xl mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800" id="addressTitle">Postal Address</h4>
+                                <p class="text-gray-700">50 PRINCES STREET, IPSWICH, ENGLAND IP1 1RJ</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-envelope text-blue-900 text-2xl mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Email</h4>
+                                <p class="text-gray-700">center100plus@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone-alt text-blue-900 text-2xl mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800" id="contactTitle">Contact Phones</h4>
+                                <p class="text-gray-700" id="contactText">(WhatsApp/Telegram numbers will be added soon)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Methods -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h3 id="contactMethodsTitle" class="text-3xl font-bold text-center text-blue-900 mb-12">Contact Us</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="contact-card bg-white p-8 rounded-lg text-center">
+                    <div class="bg-green-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fab fa-whatsapp text-green-600 text-3xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800 mb-2">WhatsApp</h4>
+                    <p id="whatsappText" class="text-gray-600 mb-4">Contact us directly via WhatsApp</p>
+                    <button id="whatsappBtn" class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full font-medium transition duration-300">
+                        <i class="fab fa-whatsapp mr-2"></i>
+                        <span>Message Us</span>
+                    </button>
+                </div>
+                <div class="contact-card bg-white p-8 rounded-lg text-center">
+                    <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fab fa-telegram text-blue-500 text-3xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800 mb-2">Telegram</h4>
+                    <p id="telegramText" class="text-gray-600 mb-4">Reach out to us on Telegram</p>
+                    <button id="telegramBtn" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition duration-300">
+                        <i class="fab fa-telegram mr-2"></i>
+                        <span>Message Us</span>
+                    </button>
+                </div>
+            </div>
+            <p id="contactNote" class="text-center text-gray-500 mt-8">For tariffs and additional information on our services, please visit our main website</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-balance-scale text-xl"></i>
+                        <h2 class="text-lg font-bold">C100P LIMITED</h2>
+                    </div>
+                    <p class="text-blue-200 mt-2">Part of CENTER100PLUS international law group</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <p id="footerText" class="mb-2">Expert legal services for international clients</p>
+                    <a href="https://www.c100p.com" target="_blank" class="text-blue-300 hover:text-white transition duration-300">
+                        www.c100p.com
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-blue-800 mt-6 pt-6 text-sm text-blue-200 text-center">
+                <p id="copyrightText">© 2023 C100P LIMITED. All rights reserved. Registered in England No. 16034770</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Language content
+        const content = {
+            en: {
+                heroTitle: "International Legal Services Group",
+                heroSubtitle: "Expert legal solutions for clients in the UK, EU, USA and Middle East",
+                visitWebsite: "Visit Our Website",
+                aboutTitle: "About C100P LIMITED",
+                aboutText1: "C100P LIMITED is part of the international law group CENTER100PLUS. The company mostly serves clients residing in the UK, EU, USA and the Middle East.",
+                aboutText2: "C100P Limited is incorporated in the United Kingdom, registration No. 16034770.",
+                addressTitle: "Postal Address",
+                contactTitle: "Contact Phones",
+                contactText: "(WhatsApp/Telegram numbers will be added soon)",
+                contactMethodsTitle: "Contact Us",
+                whatsappText: "Contact us directly via WhatsApp",
+                telegramText: "Reach out to us on Telegram",
+                contactNote: "For tariffs and additional information on our services, please visit our main website",
+                footerText: "Expert legal services for international clients",
+                copyrightText: "© 2023 C100P LIMITED. All rights reserved. Registered in England No. 16034770"
+            },
+            ru: {
+                heroTitle: "Международная Группа Юридических Компаний",
+                heroSubtitle: "Профессиональные юридические решения для клиентов в Великобритании, ЕС, США и на Ближнем Востоке",
+                visitWebsite: "Посетить Наш Сайт",
+                aboutTitle: "О C100P LIMITED",
+                aboutText1: "С100P LIMITED, является частью международной группы юридических компаний ЦЕНТР100PLUS. Компания в основном обслуживает жителей Соединенного Королевства, ЕС, США и Ближнего Востока.",
+                aboutText2: "С100P LIMITED зарегистрирована в Соединенном Королевстве, г. Ипсвич. Регистрационный номер компании: 16034770.",
+                addressTitle: "Почтовый Адрес",
+                contactTitle: "Контактные Телефоны",
+                contactText: "(Номера WhatsApp/Telegram будут добавлены в ближайшее время)",
+                contactMethodsTitle: "Свяжитесь с Нами",
+                whatsappText: "Свяжитесь с нами напрямую через WhatsApp",
+                telegramText: "Напишите нам в Telegram",
+                contactNote: "Для получения информации по тарифам и услугам, приглашаем Вас посетить основной сайт группы юридических компаний",
+                footerText: "Профессиональные юридические услуги для международных клиентов",
+                copyrightText: "© 2023 C100P LIMITED. Все права защищены. Зарегистрирована в Англии № 16034770"
+            }
+        };
+
+        // Language switch functionality
+        document.getElementById('enBtn').addEventListener('click', () => {
+            setLanguage('en');
+            document.getElementById('enBtn').classList.add('bg-white', 'text-blue-900');
+            document.getElementById('enBtn').classList.remove('bg-blue-800', 'text-white');
+            document.getElementById('ruBtn').classList.add('bg-blue-800', 'text-white');
+            document.getElementById('ruBtn').classList.remove('bg-white', 'text-blue-900');
+        });
+
+        document.getElementById('ruBtn').addEventListener('click', () => {
+            setLanguage('ru');
+            document.getElementById('ruBtn').classList.add('bg-white', 'text-blue-900');
+            document.getElementById('ruBtn').classList.remove('bg-blue-800', 'text-white');
+            document.getElementById('enBtn').classList.add('bg-blue-800', 'text-white');
+            document.getElementById('enBtn').classList.remove('bg-white', 'text-blue-900');
+        });
+
+        function setLanguage(lang) {
+            const elements = document.querySelectorAll('[id]');
+            elements.forEach(element => {
+                if (content[lang][element.id]) {
+                    element.textContent = content[lang][element.id];
+                }
+            });
+            
+            // Add fade-in effect to main content areas
+            const fadeElements = document.querySelectorAll('.fade-in');
+            fadeElements.forEach(el => {
+                el.style.animation = 'none';
+                void el.offsetWidth; // trigger reflow
+                el.style.animation = 'fadeIn 0.5s ease-in';
+            });
+        }
+
+        // Initialize with English
+        setLanguage('en');
+
+        // Contact buttons functionality
+        document.getElementById('whatsappBtn').addEventListener('click', () => {
+            alert('WhatsApp contact functionality will be added when numbers are available');
+        });
+
+        document.getElementById('telegramBtn').addEventListener('click', () => {
+            alert('Telegram contact functionality will be added when numbers are available');
+        });
+    </script>
+</body>
+</html>
