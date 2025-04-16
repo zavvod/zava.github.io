@@ -81,3 +81,4 @@ document.getElementById('ru-btn').onclick = () => setLang('ru');
 
 // Default language
 setLang('en');
+ 
