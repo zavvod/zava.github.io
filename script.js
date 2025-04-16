@@ -10,7 +10,7 @@ const content = {
     about: `
       <div class="about-title">ABOUT US:</div>
       <div style="margin-bottom:10px;">
-        <span style="font-weight:bold;">C100P LIMITED</span> is part of an International Group of Law Firms
+        <span style="font-weight:bold; color: #2e5a8a; ">C100P LIMITED  is part of an International Group of Law Firms</span>
       </div>
       <div style="margin: 15px 0;">
         <img src="img/logo-red.png" alt="Center100Plus" class="red-logo">
@@ -34,7 +34,8 @@ const content = {
   },
   ru: {
     main: `
-      МЕЖДУНАРОДНАЯ ГРУППА ЮРИДИЧЕСКИХ КОМПАНИЙ<br>
+      МЕЖДУНАРОДНАЯ ГРУППА 
+      ЮРИДИЧЕСКИХ КОМПАНИЙ<br>
       <span style="font-weight:normal;font-size:0.85em;">
         Профессиональные юридические решения для клиентов<br>
         Великобритании, ЕС, США и Ближнего Востока
@@ -43,7 +44,7 @@ const content = {
     about: `
       <div class="about-title">О НАС:</div>
       <div style="margin-bottom:10px;">
-        <span style="font-weight:bold;">C100P LIMITED</span> является частью Международной группы юридических компаний
+         <span style="font-weight:bold; color: #2e5a8a; ">C100P LIMITED  является частью Международной группы юридических компаний</span>
       </div>
       <div style="margin: 15px 0;">
         <img src="img/logo-red.png" alt="Центр100Плюс" class="red-logo">
@@ -81,4 +82,3 @@ document.getElementById('ru-btn').onclick = () => setLang('ru');
 
 // Default language
 setLang('en');
- 
